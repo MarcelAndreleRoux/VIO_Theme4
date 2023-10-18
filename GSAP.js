@@ -3,7 +3,9 @@ gsap.registerPlugin(ScrollTrigger);
 document.addEventListener("DOMContentLoaded", function () {
   let aboutMeSection = document.querySelector("#AboutMe");
   let aboutMeText = aboutMeSection.querySelector(".text");
+  let pinContainer = document.querySelector("#pin-container");
 
+  // First Animation: Fade in AboutMe Text
   gsap.fromTo(
     aboutMeText,
     { opacity: 0, x: -200 },
@@ -11,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: aboutMeSection,
         start: "top center",
-        markers: true,
         toggleActions: "restart none none none",
       },
       opacity: 1,
@@ -21,16 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   );
 
-  gsap.to("#extra-container", {
+  // Create a timeline for the sliding sections
+  let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: "#AboutMe",
+      trigger: pinContainer,
       start: "top top",
-      end: "+=200%" /* This line is adjusted */,
-      pin: true /* This line is added */,
-      scrub: true /* This line is added */,
-      markers: true,
+      end: "+=500%",
+      pin: true,
+      scrub: true,
     },
-    x: "0%",
-    ease: "power2.out",
   });
+
+  tl.fromTo("#HTML", { xPercent: 100 }, { xPercent: -100, duration: 1 });
+  tl.fromTo("#CSS", { xPercent: 100 }, { xPercent: -100, duration: 1 });
+  tl.fromTo("#JS", { xPercent: 100 }, { xPercent: -100, duration: 1 });
+  tl.fromTo("#GSAP", { xPercent: 100 }, { xPercent: -100, duration: 1 });
+  tl.fromTo("#MoreAboutMe", { xPercent: 100 }, { xPercent: -100, duration: 1 });
 });

@@ -5,13 +5,15 @@ body {
   color: #ffffff;
   margin: 0;
   font-family: "Poppins";
+  user-select: none;
+  overflow-x: hidden;
 }
 
 .custom-navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgb(28, 28, 28);
+  background-color: #1c1c1c;
 }
 
 /* Dropdown Button */
@@ -111,6 +113,11 @@ body {
   font-size: 100px;
 }
 
+h2 {
+  color: #5fa4ff;
+  font-size: 60px;
+}
+
 .indexHeading h3 {
   font-size: 30px;
   margin-bottom: 3%;
@@ -164,6 +171,37 @@ body {
   transform: translateX(-50%);
 }
 
+.ReadMore-btn button {
+  background: none;
+  border: 2px solid wheat;
+  color: wheat;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+
+.ReadMore-btn button:hover {
+  background: wheat;
+  color: black;
+}
+
+.textcontainer img {
+  width: 1000px;
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textcontainer p {
+  text-align: center;
+}
+
 .explore-btn button {
   background: none;
   border: 2px solid wheat;
@@ -213,33 +251,62 @@ body {
 
 /*GSAP*/
 
-.textcontainer .text {
+#AboutMe .textcontainer .text {
   opacity: 0;
   color: white;
 }
 
-#extra-container {
-  display: flex;
-  transform: translateX(-100%);
-  transition: transform 1s ease-in-out;
+.extra-section {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .extra-section {
-  display: grid;
-  place-items: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100vw;
+  left: 0;
+  transform: translateX(100%);
 }
 
-#Skills {
-  background-color: #5fa4ff;
+#pin-container {
+  position: relative;
+}
+
+#HTML {
+  background-color: #ff5f7f;
+}
+
+#CSS {
+  background-color: #2e72ae;
+}
+
+#JS {
+  background-color: #f7df1e;
+}
+
+#GSAP {
+  background-color: #399d46;
 }
 
 #MoreAboutMe {
-  background-color: #853387;
+  background-color: #131316;
 }
 
 .content {
   padding: 20px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  font-size: 20px;
+}
+
+.footer .contact-icons {
+  font-size: 60px;
 }
