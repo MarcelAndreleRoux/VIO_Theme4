@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+  new fullpage("#fullpage", {
+    autoScrolling: true,
+    scrollHorizontally: true,
+    navigation: true,
+  });
+});
+
 function myFunction() {
   const dropdown = document.getElementById("myDropdown");
   const buttonIcon = document.querySelector(".dropbtn i");
@@ -69,3 +77,30 @@ window.onclick = function (event) {
     }
   }
 };
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((element) => observer.observe(element));
+
+$("a[href^='#']").on("click", function (event) {
+  var target = $($(this).attr("href"));
+  if (target.length) {
+    event.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: target.offset().top,
+      },
+      1000
+    );
+  }
+});

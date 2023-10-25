@@ -31,139 +31,171 @@
           <button onclick="myFunction()" class="dropbtn">
             <i class="fa-solid fa-bars"></i>
           </button>
+
           <div id="myDropdown" class="dropdown-content">
-            <a href="#AboutMe">About Me</a>
-            <a href="#Theme2">Theme 2</a>
-            <a href="#Theme3">Theme 3</a>
-            <a href="#Contact">Contact Me</a>
+            <a href="#one">About Me</a>
+            <a href="#two">Skill Set</a>
+            <a href="#three">Theme 2</a>
+            <a href="#four">Theme 3</a>
+            <a href="#five">Contact Me</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div>
-      <div class="section" id="Top">
-        <div class="indexHeading" id="clickable">
-          <a
-            href="#AboutMe"
-            id="clickable"
-            style="display: block; text-decoration: none; color: inherit"
-          >
-            <h1>Marcel le Roux</h1>
-            <h3>Design | Develop | Deliver</h3>
+    <div class="fullpage container">
+      <section class="one">
+        <div id="Top">
+          <div class="indexHeading" id="clickable">
+            <img src="public/img/Personal_logo_VIO_Theme4_light.png" />
+          </div>
+
+          <a class="exploreMore-btn" href="#two">
+            <button>Learn More</button>
           </a>
         </div>
-        <a class="exploreMore-btn" href="#AboutMe">
-          <button>Learn More</button>
-        </a>
-      </div>
+      </section>
 
-      <!-- the body should have a About Me section, Theme 2 Section with a button, Theme 3 section with a button  -->
-
-      <div class="AboutMeSection" id="pin-container">
-        <div class="section" id="AboutMe">
-          <div class="textcontainer">
-            <div class="text">
-              Hi I am Marcel le Roux and I am a web developer. I am currently a
-              student at the University Of Pretoria studing Multimedia.
+      <section class="hidden">
+        <div class="AboutMeSection hidden" id="pin-container">
+          <div class="section" id="AboutMe">
+            <div class="textcontainer">
+              <h2>~ This is Me ~</h2>
+              <div class="text">
+                As a passionate web developer, I am currently immersing
+                myself<br />
+                in the field of multimedia while studying the University of
+                Pretoria.<br />
+                I'm originally from <strong>Pretoria, South Africa,</strong> and
+                I've always had a<br />
+                strong desire for excellence and a deep love for creation. These
+                natural <br />abilities, along with a strong passion for coding,
+                have motivated me to pursue a career as a full stack developer.
+                I stand out for my ability to pick up new abilities quickly. I
+                can complete tasks well ahead of<br />
+                schedule, demonstrating my ability to work well under pressure.
+                My goal is to become a Full Stack Developer and leave my mark in
+                the tech industry by combining my technical expertise with
+                artistic flare.
+              </div>
+            </div>
+            <div class="image-boarder">
+              <img src="public/img/Me.jpg" />
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="extra-section" id="HTML">
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section class="two" id="two">
+        <div class="center">
+          <div class="logos-container">
+            <h2>~ Skill Set ~</h2>
+
+            <div class="logos center">
+              <div class="logo hidden">
+                <img src="public/img/HTML.png" alt="HTML5" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/CSS.png" alt="CSS3" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/JS.png" alt="Java Script" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/NODEJS.png" alt="Node JS" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/PHP.png" alt="php" />
+              </div>
+            </div>
+
+            <div class="logos center">
+              <div class="logo hidden">
+                <img src="public/img/CPP.png" alt="C++" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/JAVA.png" alt="Java" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/ANGULAR.png" alt="Angular" />
+              </div>
+              <div class="logo hidden">
+                <img src="public/img/REACT.png" alt="React" />
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="extra-section" id="CSS">
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section class="three" id="three">
+        <div class="hidden" id="Theme2">
+          <div class="textcontainer-other">
+            <h2>~ Theme2 ~</h2>
+            <p>
+              Theme 2 was a Task we needed to do for VIO. We had to create a
+              website to showcase our<br />
+              commic that we needed to draw over the past 2 years.
+            </p>
+            <img src="public/img/background.png" />
+            <a class="ReadMore-btn">
+              <button>Find Out More</button>
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="extra-section" id="JS">
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section class="four" id="four">
+        <div class="hidden" id="Theme3">
+          <div class="textcontainer-other">
+            <h2>~ Theme3 ~</h2>
+            <p>
+              For Theme 3 we needed to create a website to showcase our commic
+              that we<br />
+              made over the past year and then we need to make it interactive
+              and add<br />
+              animations and sounds to the pannles.
+            </p>
+            <img src="public/img/background.png" />
+            <a class="ReadMore-btn">
+              <button>Find Out More</button>
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="extra-section" id="GSAP">
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <section class="five hidden" id="five">
+        <h2>~ Contact Me ~</h2>
+        <input class="custom-input hidden" type="text" placeholder="Email" />
+        <input class="custom-input hidden" type="text" placeholder="Subject" />
+        <textarea
+          class="custom-input-message hidden"
+          placeholder="Message"
+        ></textarea>
+        <button class="Send-btn">Send</button>
+      </section>
+
+      <section class="hidden">
+        <div class="footer">
+          <div class="contact-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-discord"></i>
           </div>
+          <div class="contact-text"></div>
         </div>
-
-        <div class="extra-section" id="MoreAboutMe">
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="Theme2">
-        <div class="textcontainer">
-          <h2>Theme2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-            nam<br />
-            ipsum tempore porro corrupti quia a, nemo doloremque deleniti
-            harum<br />
-            blanditiis eligendi fuga hic consectetur, minima illo ad quam
-            inventore!
-          </p>
-          <img src="public/img/background.png" />
-          <a class="ReadMore-btn">
-            <button>Find Out More</button>
-          </a>
-        </div>
-      </div>
-
-      <div class="section" id="Theme3">
-        <div class="textcontainer">
-          <h2>Theme3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nam
-            ipsum tempore porro corrupti quia a, nemo doloremque deleniti<br />
-            harum blanditiis eligendi fuga hic consectetur, minima illo ad quam
-            inventore!
-          </p>
-          <a class="ReadMore-btn">
-            <button>Find Out More</button>
-          </a>
-        </div>
-      </div>
+      </section>
     </div>
 
-    <div class="footer">
-      <div class="contact-icons">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-discord"></i>
-      </div>
-      <div class="contact-text"></div>
-      <div class="fast-links">
-        <i class="fa-solid fa-house"></i>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-solid fa-t"></i>
-        <i class="fa-solid fa-2"></i>
-        <i class="fa-solid fa-t"></i>
-        <i class="fa-solid fa-3"></i>
-      </div>
-    </div>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="GSAP.js"></script>
   </body>
 </html>

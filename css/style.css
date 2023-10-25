@@ -1,12 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&family=Poppins:wght@400;700;800&family=Roboto+Slab&display=swap");
 
 body {
   background-color: #131316;
   color: #ffffff;
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Roboto Slab", serif;
   user-select: none;
   overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .custom-navbar {
@@ -84,11 +88,87 @@ body {
 }
 
 /*rest*/
-.section {
+section {
   display: grid;
   place-items: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-input {
+  background-color: transparent;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 40%;
+  transition: all 0.5s;
+}
+
+.custom-input-message {
+  background-color: transparent;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-align: start;
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 40%;
+  height: 200px;
+  transition: all 0.5s;
+}
+
+.custom-input,
+.custom-input-message {
+  width: 60%;
+}
+
+.five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.Send-btn {
+  background: none;
+  border: 2px solid wheat;
+  color: wheat;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 30px 0 0 0;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+
+.Send-btn:hover {
+  background: wheat;
+  color: black;
+}
+
+.five h2 {
+  margin-bottom: 10px;
 }
 
 .heading {
@@ -99,11 +179,10 @@ body {
 }
 
 .indexHeading {
-  position: absolute;
   text-align: center;
-  top: 30%;
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -139,10 +218,15 @@ h2 {
   width: 100%;
 }
 
+#Top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .exploreMore-btn {
   cursor: pointer;
-  position: absolute;
-  top: 60%;
 }
 
 .exploreMore-btn button {
@@ -192,10 +276,40 @@ h2 {
 }
 
 .textcontainer {
+  display: inline-block;
+  max-width: 60%;
+  vertical-align: top;
+}
+
+.image-boarder {
+  border: 2px solid #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.image-boarder img {
+  padding: 20px;
+  width: 400px;
+}
+
+.text {
+  line-height: 25px;
+  word-spacing: 3.2px;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+}
+
+.textcontainer-other img {
+  width: 1000px;
+}
+
+.textcontainer-other {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .textcontainer p {
@@ -249,48 +363,8 @@ h2 {
   }
 }
 
-/*GSAP*/
-
-#AboutMe .textcontainer .text {
-  opacity: 0;
-  color: white;
-}
-
-.extra-section {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-}
-
-.extra-section {
-  left: 0;
-  transform: translateX(100%);
-}
-
 #pin-container {
   position: relative;
-}
-
-#HTML {
-  background-color: #ff5f7f;
-}
-
-#CSS {
-  background-color: #2e72ae;
-}
-
-#JS {
-  background-color: #f7df1e;
-}
-
-#GSAP {
-  background-color: #399d46;
-}
-
-#MoreAboutMe {
-  background-color: #131316;
 }
 
 .content {
@@ -303,10 +377,103 @@ h2 {
   width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: #1c1c1c;
+  background-color: transparent;
   font-size: 20px;
 }
 
 .footer .contact-icons {
   font-size: 60px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos {
+  display: flex;
+}
+
+.logos img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+  transition-delay: 600ms;
+}
+.logo:nth-child(5) {
+  transition-delay: 800ms;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ----- icons ----- */
+.contact-icons .fa-instagram {
+  color: #c13584; /* Instagram gradient primary color */
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  ); /* Gradient background for added flair, optional */
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.contact-icons .fa-twitter {
+  color: #1da1f2;
+}
+
+.contact-icons .fa-envelope {
+  color: #333; /* I've set it to a neutral dark gray. Adjust as needed */
+}
+
+.contact-icons .fa-facebook {
+  color: #1877f2;
+}
+
+.contact-icons .fa-linkedin {
+  color: #0077b5;
+}
+
+.contact-icons .fa-github {
+  color: #f4efef;
+}
+
+.contact-icons .fa-discord {
+  color: #7289da;
+}
+
+.contact-icons i:hover {
+  opacity: 0.5; /* Slight opacity change on hover for interactive feel */
+  cursor: pointer;
 }
