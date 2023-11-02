@@ -1,11 +1,5 @@
 function myFunction() {
   const dropdown = document.getElementById("myDropdown");
-  if (dropdown) {
-    dropdown.style.display =
-      dropdown.style.display === "block" ? "none" : "block";
-  } else {
-    window.location.href = "index.html";
-  }
 
   const buttonIcon = document.querySelector(".dropbtn i");
 
@@ -108,48 +102,71 @@ applyAnimation("#my-text-2");
 applyAnimation("#my-text-3");
 applyAnimation("#my-text-4");
 
-// swup & GSAP
+// barba & GSAP
 
-document.addEventListener("swup:contentReplaced", function () {
-  const currentPage = window.location.pathname;
-  const dropbtn = document.querySelector(".dropbtn i");
+function pageTransition() {
+  var tl = gsap.timeline();
 
-  if (currentPage.endsWith("skills.html")) {
-    dropbtn.classList.remove("fa-bars");
-    dropbtn.classList.add("fa-arrow-left");
-  } else {
-    dropbtn.classList.remove("fa-arrow-left");
-    dropbtn.classList.add("fa-bars");
-  }
+  tl.to("ul.transition li", {
+    duration: 0.5,
+    scaleY: 1,
+    transformOrigin: "top left",
+    stagger: 0.2,
+  });
+
+  tl.to("ul.transition li", {
+    duration: 0.5,
+    scaleY: 0,
+    transformOrigin: "top left",
+    stagger: 0.1,
+    delay: 0.1,
+  });
+}
+
+function delay(n) {
+  n = n || 2000;
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}
+
+barba.init({
+  sync: true,
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
+
+        window.scrollTo(0, 0);
+        pageTransition();
+        await delay(1500);
+        done();
+      },
+    },
+  ],
 });
 
-const transition = {
-  from: "(.*)",
-  to: "(.*)",
-  out: (done) => {
-    console.log("Out transition");
-    const container = document.querySelector("#swup");
-    gsap.to(container, {
-      x: "-150%",
-      opacity: 0,
-      duration: 1.2,
-      onComplete: done,
-    });
-  },
-  in: (done) => {
-    console.log("In transition");
-    const container = document.querySelector("#swup");
-    gsap.from(container, {
-      x: "100%",
-      opacity: 0,
-      duration: 0.8,
-      onComplete: done,
-    });
-  },
-};
+barba.hooks.after(() => {
+  // Reinitialize SplitType for the texts
+  myText1 = new SplitType("#my-text-1");
+  myText2 = new SplitType("#my-text-2");
+  myText3 = new SplitType("#my-text-3");
+  myText4 = new SplitType("#my-text-4");
 
-const swup = new Swup({
-  plugins: [new SwupJsPlugin({ animations: [transition] })],
+  // Reapply animations
+  applyAnimation("#my-text-1");
+  applyAnimation("#my-text-2");
+  applyAnimation("#my-text-3");
+  applyAnimation("#my-text-4");
+
+  // Refresh ScrollTrigger instances
+  ScrollTrigger.refresh();
+
+  setTimeout(() => {
+    window.location.reload();
+  }, 1800);
 });
 
 // skills gsap
@@ -161,3 +178,35 @@ document
   .forEach((item) => {
     gsap.from(item, { opacity: 0, duration: 0.5 });
   });
+
+//send email
+
+document.getElementById("sendEmail").addEventListener("click", function () {
+  const button = this;
+  const successResponse = document.querySelector(".success-responce");
+  const inputs = document.querySelectorAll(
+    ".custom-input, .custom-input-message"
+  );
+
+  // Start the loading effect
+  button.style.position = "relative";
+  button.classList.add("loading");
+
+  setTimeout(() => {
+    // Show the success message after 3 seconds (loading bar completion)
+    successResponse.style.display = "block";
+
+    // Hide the success message after 2 more seconds
+    setTimeout(() => {
+      successResponse.style.display = "none";
+
+      // Clear the inputs
+      inputs.forEach((input) => {
+        input.value = "";
+      });
+
+      // Reset the button's state
+      button.classList.remove("loading");
+    }, 2000);
+  }, 3000);
+});

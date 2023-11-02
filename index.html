@@ -23,168 +23,197 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>VIO - Theme 4</title>
   </head>
-  <body>
-    <nav class="custom-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">
-            <i class="fa-solid fa-bars"></i>
-          </button>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#two">About Me</a>
-            <a class="skillbtn" href="skills.html">Skill Set</a>
-            <a href="#three">Theme 2</a>
-            <a href="#four">Theme 3</a>
-            <a href="#five">Contact Me</a>
+    <div class="wrapper">
+      <div data-barba="container" data-barba-namespace="home">
+        <nav class="custom-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html#two">About Me</a>
+                <a class="skillbtn" href="skills.html">Skill Set</a>
+                <a href="index.html#three">Project 1</a>
+                <a href="index.html#four">Project 2</a>
+                <a href="index.html#five">Contact Me</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </nav>
+        </nav>
 
-    <div id="VeryTop"></div>
+        <div id="VeryTop"></div>
 
-    <div class="fullpage container swup-transition" id="swup">
-      <section class="one" id="one">
-        <div id="Top">
-          <div class="indexHeading" id="clickable">
-            <img src="public/img/Personal_logo.png" />
-          </div>
-
-          <a class="explore-btn" href="#two">
-            <button class="exploreMore-btn">Learn More</button>
-          </a>
-        </div>
-      </section>
-
-      <section class="content" id="two">
-        <div class="AboutMeSection" id="pin-container">
-          <div class="section" id="AboutMe">
-            <div class="textcontainer">
-              <h2 id="my-text-1">Marcel le Roux</h2>
-
-              <div class="text">
-                As a passionate web developer, I am currently immersing
-                myself<br />
-                in the field of multimedia while studying the University of
-                Pretoria.<br />
-                I'm originally from <strong>Pretoria, South Africa,</strong> and
-                I've always had a<br />
-                strong desire for excellence and a deep love for creation. These
-                natural <br />abilities, along with a strong passion for coding,
-                have motivated me to pursue a career as a full stack developer.
-                I stand out for my ability to pick up new abilities quickly. I
-                can complete tasks well ahead of<br />
-                schedule, demonstrating my ability to work well under pressure.
-                My goal is to become a <strong>Full Stack Developer</strong> and
-                leave my mark in the tech industry by combining my technical
-                expertise with artistic flare.
+        <div class="fullpage container">
+          <section class="one" id="one">
+            <div id="Top">
+              <div class="indexHeading" id="clickable">
+                <img src="public/img/Personal_logo.png" />
               </div>
 
-              <a href="skills.html" data-swup-transition="fade">
-                <button class="Send-btn">Skills</button>
+              <a class="explore-btn" href="#two">
+                <button class="exploreMore-btn">Learn More</button>
               </a>
             </div>
+          </section>
 
-            <div class="image-boarder">
-              <img src="public/img/Me.jpg" />
+          <section class="content" id="two">
+            <div class="AboutMeSection" id="pin-container">
+              <div class="section" id="AboutMe">
+                <div class="textcontainer">
+                  <h2 id="my-text-1">Marcel le Roux</h2>
+
+                  <div class="text">
+                    As a passionate web developer, I am currently immersing
+                    myself<br />
+                    in the field of multimedia while studying the University of
+                    Pretoria.<br />
+                    I'm originally from
+                    <strong>Pretoria, South Africa,</strong> and I've always had
+                    a<br />
+                    strong desire for excellence and a deep love for creation.
+                    These natural <br />abilities, along with a strong passion
+                    for coding, have motivated me to pursue a career as a full
+                    stack developer. I stand out for my ability to pick up new
+                    abilities quickly. I can complete tasks well ahead of<br />
+                    schedule, demonstrating my ability to work well under
+                    pressure. My goal is to become a
+                    <strong>Full Stack Developer</strong> and leave my mark in
+                    the tech industry by combining my technical expertise with
+                    artistic flare.
+                  </div>
+
+                  <a href="skills.html">
+                    <button class="Send-btn">Skills</button>
+                  </a>
+                </div>
+
+                <div class="image-boarder">
+                  <img src="public/img/Me.jpg" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="content" id="three">
+            <div class="three" id="Theme2">
+              <div class="textcontainer-other">
+                <h2 id="my-text-2">Project 1</h2>
+                <p>
+                  Theme 2 was a Task we needed to do for VIO. We had to create a
+                  website to showcase our<br />
+                  commic that we needed to draw over the past 2 years.
+                </p>
+
+                <h3>Future Changes</h3>
+                <p>
+                  I want to fix my Theme 4 to make it more interactive for the
+                  users<br />
+                  rather than just some page where you watch a video.
+                </p>
+
+                <img src="public/img/background.png" />
+                <a href="Theme2.html">
+                  <button class="Send-btn">Find Out More</button>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="content" id="four">
+            <div class="four" id="Theme3">
+              <div class="textcontainer-other">
+                <h2 id="my-text-3">Project 2</h2>
+                <p>
+                  For Theme 3 we needed to create a website to showcase our
+                  commic that we<br />
+                  made over the past year and then we need to make it
+                  interactive and add<br />
+                  animations and sounds to the pannles.
+                </p>
+                <h3>Future Changes</h3>
+                <p>
+                  I want to make my Theme 3 a bit cleaner as it is just a bit
+                  out of place, like at the bottom.
+                </p>
+                <img src="public/img/background.png" />
+
+                <a href="Theme3.html">
+                  <button class="Send-btn">Find Out More</button>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="content" id="five">
+            <div class="five">
+              <h2 id="my-text-4">Contact Me</h2>
+
+              <input
+                class="custom-input hidden"
+                type="text"
+                placeholder="Email"
+              />
+
+              <input
+                class="custom-input hidden"
+                type="text"
+                placeholder="Subject"
+              />
+
+              <textarea
+                class="custom-input-message hidden"
+                placeholder="Message"
+              ></textarea>
+
+              <div class="success-responce" style="display: none">
+                Your Email has been Sent
+              </div>
+
+              <button class="Send-btn" id="sendEmail">Send</button>
+            </div>
+          </section>
+
+          <div class="content">
+            <div class="footer">
+              <div class="backtoTop">
+                <a href="#VeryTop">
+                  <i class="lni lni-arrow-up-circle"></i>
+                  <span>Back To Top</span>
+                </a>
+              </div>
+              <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/marcel-le-roux-ab5958288/">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/MarcelAndreleRoux"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <div class="contact-text"></div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="content" id="three">
-        <div class="three" id="Theme2">
-          <div class="textcontainer-other">
-            <h2 id="my-text-2">Project 1</h2>
-            <p>
-              Theme 2 was a Task we needed to do for VIO. We had to create a
-              website to showcase our<br />
-              commic that we needed to draw over the past 2 years.
-            </p>
-
-            <h3>Future Changes</h3>
-            <p>
-              I want to fix my Theme 4 to make it more interactive for the
-              users<br />
-              rather than just some page where you watch a video.
-            </p>
-
-            <img src="public/img/background.png" />
-
-            <button class="Send-btn">Find Out More</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="content" id="four">
-        <div class="four" id="Theme3">
-          <div class="textcontainer-other">
-            <h2 id="my-text-3">Project 2</h2>
-            <p>
-              For Theme 3 we needed to create a website to showcase our commic
-              that we<br />
-              made over the past year and then we need to make it interactive
-              and add<br />
-              animations and sounds to the pannles.
-            </p>
-            <h3>Future Changes</h3>
-            <p>
-              I want to make my Theme 3 a bit cleaner as it is just a bit out of
-              place, like at the bottom.
-            </p>
-            <img src="public/img/background.png" />
-
-            <button class="Send-btn">Find Out More</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="content" id="five">
-        <div class="five">
-          <h2 id="my-text-4">Contact Me</h2>
-
-          <input class="custom-input hidden" type="text" placeholder="Email" />
-
-          <input
-            class="custom-input hidden"
-            type="text"
-            placeholder="Subject"
-          />
-
-          <textarea
-            class="custom-input-message hidden"
-            placeholder="Message"
-          ></textarea>
-
-          <button class="Send-btn">Send</button>
-        </div>
-      </section>
-
-      <div class="content">
-        <div class="footer">
-          <div class="backtoTop">
-            <a href="#VeryTop"
-              ><i class="lni lni-arrow-up-circle">Back To Top</i></a
-            >
-          </div>
-          <div class="contact-icons">
-            <i class="fa-brands fa-linkedin"></i>
-
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <div class="contact-text"></div>
+          <div id="custom-cursor"></div>
         </div>
       </div>
-
-      <div id="custom-cursor"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://unpkg.com/swup@4"></script>
-    <script src="https://unpkg.com/@swup/js-plugin@3"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
 
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

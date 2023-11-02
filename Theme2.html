@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VIO</title>
+    <meta name="description" content="Marcel" />
+    <meta name="author" content="Marcel" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style-theme2.css" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <div class="wrapper">
+      <div data-barba="container" data-barba-namespace="Theme2">
+        <nav class="custom-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html#two">About Me</a>
+                <a class="skillbtn" href="skills.html">Skill Set</a>
+                <a href="index.html#three">Project 1</a>
+                <a href="index.html#four">Project 2</a>
+                <a href="index.html#five">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!--Title (photo of one shot and background of cyborg city)-->
+        <!--This should just be a standard header paralax where the logo scrolls down slowly under the underground section, I will send code for this if you do not understand-->
+        <header class="city-box">
+          <div class="logo">
+            <img src="public/img/img-Theme2/output-onlinepngtools_2.png" />
+          </div>
+        </header>
+        <!--Header Paralax (Going under the city into the subway system, I drew this just box it off)-->
+        <!--Character stats (My charcater stats nothing big just there)-->
+        <section class="underground-box">
+          <!--scrolling into the sewers (each part has it's own space)-->
+          <!--as the user scrolls down the background should slowly start to move up to give more of a paralax feel-->
+          <!--charcater data-->
+          <div class="character-data">
+            <div class="one-shot">
+              <img class="oneshot" src="public/img/img-Theme2/oneshot.png" />
+              <img
+                class="oneshot-gun"
+                src="public/img/img-Theme2/oneshot_gun.png"
+              />
+            </div>
+            <div class="character-controls">
+              <button class="btn-bio">Bio</button>
+              <button class="btn-stats">Stats</button>
+            </div>
+            <div class="character-info">
+              <div class="character-bio">
+                <p>
+                  This is One Shot. From a young age all he wanted to do was
+                  become<br />
+                  a marksman but he couldn't as he was told not to, so he
+                  trained<br />
+                  himself in the art of aiming. One Shot has never missed a shot
+                  and<br />
+                  has killed anyone and everyone in one shot.
+                </p>
+              </div>
+              <div class="character-stats">
+                <p>Strength 7/10</p>
+                <p>Endurance 10/10</p>
+                <p>Speed 8/10</p>
+                <p>Dexterity 4/10</p>
+                <p>Intelligence 5/10</p>
+              </div>
+            </div>
+          </div>
+          <!--keep scrolling into the sewers (each part has it's own space)-->
+          <!--Weapon (Gun and explain it)-->
+          <div class="weapon-data">
+            <!--I want to display a gun img and the user can hover over the image and the data will display-->
+            <div class="gun">
+              <img class="gun-img" src="public/img/img-Theme2/gun.png" />
+            </div>
+            <div class="panel">
+              <img class="panel-img" src="public/img/img-Theme2/panel.png" />
+            </div>
+            <div class="no-click">
+              <img src="public/img/img-Theme2/noclick.png" />
+            </div>
+            <div class="gunData">
+              <p>
+                This is One Shot's trusty right hand golden Desert Eagle.<br />
+                He got this gun from his grandfatherand this is One Shot's
+                <br />
+                chosen weapon from birth. The bullets this gun uses<br />
+                is the most optimal since it will always kill anything with one
+                shot.
+              </p>
+            </div>
+          </div>
+          <!--keep scrolling into the sewers (each part has it's own space)-->
+          <!--Map (Some places already made just do it over)-->
+          <div class="map-data">
+            <!--this map will have 5 places to hover over-->
+            <!--each place is marked with a item I placed over the map to make it possible 
+            to hover over the item and that will display a text about that place-->
+            <!--just place the items ontop of the map and tell me how to move them and I will move them to the correct place-->
+            <div class="item-cave">
+              <img
+                class="marker"
+                id="marker1"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  The cave is where the metal gaint robots live, the were exield
+                  <br />
+                  here a long time ago and they never wanted to live there but
+                  the
+                  <br />
+                  gate keeps kept them there.
+                </p>
+              </div>
+            </div>
+            <div class="item-city">
+              <img
+                class="marker"
+                id="marker2"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  The city is where the cats and the cat leader lives, this city
+                  was
+                  <br />
+                  shared amoungst all the cats and robots till the robots tryed
+                  to
+                  <br />
+                  kill the king and was exiled to the cave not they live
+                  devided.
+                </p>
+              </div>
+            </div>
+            <div class="item-dead-mans-land">
+              <img
+                class="marker"
+                id="marker3"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  This is where all the wars happen and where the robots try to
+                  take
+                  <br />
+                  over the city year after year.
+                </p>
+              </div>
+            </div>
+            <div class="item-forgotton-forest">
+              <img
+                class="marker"
+                id="marker4"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  We know nothing of this yet, as one shot has not explored this
+                  yet.
+                </p>
+              </div>
+            </div>
+            <div class="item-the-mountains">
+              <img
+                class="marker"
+                id="marker5"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  We know nothing of this yet, as one shot has not explored this
+                  yet.
+                </p>
+              </div>
+            </div>
+            <div class="item-Lunas-Dam">
+              <img
+                class="marker"
+                id="marker6"
+                src="public/img/img-Theme2/marker.png"
+              />
+              <div class="marker-data">
+                <p>
+                  We know nothing of this yet, as one shot has not explored this
+                  yet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--keep scrolling into the sewers (each part has it's own space)-->
+          <!--Characters (wife and main antagonist)-->
+          <div class="sidecharacters">
+            <div class="side-character-1">
+              <div class="wife">
+                <img
+                  class="name"
+                  src="public/img/img-Theme2/Lizzie.png"
+                  alt="Lizzie"
+                />
+              </div>
+              <div class="character-1-img">
+                <img
+                  class="Lizzie"
+                  src="public/img/img-Theme2/wife.png"
+                  alt="wife"
+                />
+              </div>
+              <div class="character-1-data">
+                <p>
+                  This is One Shot's lost wife, whom he met when they were young
+                  and married
+                  <br />
+                  after completing University. One Shot believed she was dead,
+                  <br />
+                  having witnessed her fall off a train, and the king of cats
+                  <br />
+                  attributed her tragic loss to the robots, further fueling One
+                  <br />
+                  Shot's determination to fight in the Robot wars.
+                </p>
+              </div>
+            </div>
+            <div class="side-character-2">
+              <div class="king">
+                <img
+                  class="name"
+                  src="public/img/img-Theme2/Himer.png"
+                  alt="King Himer The III"
+                />
+              </div>
+              <div class="character-2-img">
+                <img
+                  class="Himer"
+                  src="public/img/img-Theme2/king.png"
+                  alt="king"
+                />
+              </div>
+              <div class="character-2-data">
+                <p>
+                  Meet King Himer The III, the new ruler of the cats following
+                  the
+                  <br />
+                  passing of his father, King Himer the II, who was regarded as
+                  the
+                  <br />
+                  most exemplary king. Great expectations arose for King Himer
+                  the
+                  <br />
+                  III to excel even further, but unexpectedly, he turned out to
+                  be
+                  <br />
+                  cruel. Immediately after his father's demise, he amended the
+                  laws
+                  <br />
+                  to amass more wealth for himself. With a formidable cyborg cat
+                  <br />
+                  army at his command, nobody dares to challenge his authority.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="author-box">
+            <div class="slider-container">
+              <div class="slide">
+                <div class="me-about">
+                  <div class="myImage">
+                    <img src="public/img/img-Theme2/me.png" />
+                  </div>
+                  <div class="my-data">
+                    <p>
+                      Hi my name is Marcel. I am 20 years old and I am a BIS
+                      <br />
+                      Multimedia student at the University of Pretoria. I am
+                      <br />
+                      currently in my second year and I want to do Software
+                      <br />
+                      engineering when I graduate. My dream is to do something
+                      <br />
+                      helpful for the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="me-game">
+                  <div class="mygameImage">
+                    <img src="public/img/img-Theme2/unnamed.png" />
+                  </div>
+                  <div class="my-game-data">
+                    <p>
+                      I like a lot of games but I must say that I definitely
+                      prefer
+                      <br />
+                      the FPS type games over any other. I like open world games
+                      and
+                      <br />
+                      I like pvp but I don't mind some role play so that is why
+                      I love Rust.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="me-hobby">
+                  <div class="myhobbyImage">
+                    <img
+                      src="public/img/img-Theme2/318-3187198_golf-icon-png-transparent-png.png"
+                    />
+                  </div>
+                  <div class="my-hobby-data">
+                    <p>
+                      I love to play golf, from a young age I have been playing
+                      golf<br />
+                      thought I did stop for around 10 years I still love the
+                      sport<br />
+                      and only recently got back into it when some of my
+                      friends<br />
+                      asked me to come play with them. I love the sort because
+                      it to<br />
+                      so humbling and reminds you that you are never going to be
+                      a<br />
+                      pro no matter how much you try.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--My details (some stupid stuff)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/script-theme2.js"></script>
+  </body>
+</html>

@@ -23,111 +23,132 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>VIO - Theme 4</title>
   </head>
-  <body>
-    <nav class="custom-navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <div class="dropdown">
-          <a href="index.html">
-            <button class="dropbtn">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
-          </a>
-        </div>
-      </div>
-    </nav>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
-    <div id="swup">
-      <div id="VeryTop"></div>
+    <div class="wrapper">
+      <div data-barba="container" data-barba-namespace="skills">
+        <nav class="custom-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
 
-      <div class="skills-container">
-        <div class="custom-table">
-          <div class="expert">
-            <h2>Expert</h2>
-            <div class="item-expert">
-              <i class="lni lni-javascript"></i>Java Script
-            </div>
-            <div class="item-expert"><i class="lni lni-html5"></i>HTML</div>
-            <div class="item-expert"><i class="lni lni-css3"></i>CSS</div>
-            <div class="item-expert"><i class="lni lni-php"></i>PHP</div>
-            <div class="item-expert"><i class="lni lni-mysql"></i>MySQL</div>
-            <div class="item-expert">
-              <i class="lni lni-bootstrap"></i>Bootstrap
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html#two">About Me</a>
+                <a class="skillbtn" href="skills.html">Skill Set</a>
+                <a href="index.html#three">Project 1</a>
+                <a href="index.html#four">Project 2</a>
+                <a href="index.html#five">Contact Me</a>
+              </div>
             </div>
           </div>
+        </nav>
 
-          <div class="intermediate">
-            <h2>Intermediate</h2>
-            <div class="item-intermediate">
-              <i class="lni lni-java"></i>Java
-            </div>
-            <div class="item-intermediate">
-              <img
-                width="40"
-                height="40"
-                src="https://img.icons8.com/color/48/c-plus-plus-logo.png"
-                alt="c-plus-plus-logo"
-              />C++
-            </div>
-            <div class="item-intermediate">
-              <i class="lni lni-nodejs"></i>Node JS
-            </div>
-            <div class="item-intermediate">
-              <img
-                width="40"
-                height="40"
-                src="https://img.icons8.com/ios-filled/50/jquery.png"
-                alt="jquery"
-              />jQuery
-            </div>
-            <div class="item-intermediate">
-              <img
-                width="40"
-                height="40"
-                src="https://img.icons8.com/color/48/express-js.png"
-                alt="express-js"
-              />Express JS
-            </div>
-            <div class="item-intermediate">
-              <i class="lni lni-mongodb"></i>MongoDB
-            </div>
-          </div>
-
-          <div class="novice">
-            <h2>Novice</h2>
-            <div class="item-novice"><i class="lni lni-react"></i>React</div>
-            <div class="item-novice">
-              <img
-                width="40"
-                height="40"
-                src="https://img.icons8.com/ios-filled/50/wordpress--v1.png"
-                alt="wordpress--v1"
-              />WordPress
-            </div>
-            <div class="item-novice">
-              <i class="lni lni-angular"></i>Angular
-            </div>
-            <div class="item-novice">
-              <i class="lni lni-android-original"></i>Andriod
-            </div>
-            <div class="item-novice"><i class="lni lni-python"></i>Python</div>
-            <div class="item-novice"><i class="lni lni-vuejs"></i>Vue JS</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="fullpage content">
         <div id="VeryTop"></div>
+
+        <div class="skills-container">
+          <div class="custom-table">
+            <div class="expert">
+              <h2>Expert</h2>
+              <div class="item-expert">
+                <i class="lni lni-javascript"></i>Java Script
+              </div>
+              <div class="item-expert"><i class="lni lni-html5"></i>HTML</div>
+              <div class="item-expert"><i class="lni lni-css3"></i>CSS</div>
+              <div class="item-expert"><i class="lni lni-php"></i>PHP</div>
+              <div class="item-expert"><i class="lni lni-mysql"></i>MySQL</div>
+              <div class="item-expert">
+                <i class="lni lni-bootstrap"></i>Bootstrap
+              </div>
+            </div>
+
+            <div class="intermediate">
+              <h2>Intermediate</h2>
+              <div class="item-intermediate">
+                <i class="lni lni-java"></i>Java
+              </div>
+              <div class="item-intermediate">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://img.icons8.com/color/48/c-plus-plus-logo.png"
+                  alt="c-plus-plus-logo"
+                />C++
+              </div>
+              <div class="item-intermediate">
+                <i class="lni lni-nodejs"></i>Node JS
+              </div>
+              <div class="item-intermediate">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://img.icons8.com/ios-filled/50/jquery.png"
+                  alt="jquery"
+                />jQuery
+              </div>
+              <div class="item-intermediate">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://img.icons8.com/color/48/express-js.png"
+                  alt="express-js"
+                />Express JS
+              </div>
+              <div class="item-intermediate">
+                <i class="lni lni-mongodb"></i>MongoDB
+              </div>
+            </div>
+
+            <div class="novice">
+              <h2>Novice</h2>
+              <div class="item-novice"><i class="lni lni-react"></i>React</div>
+              <div class="item-novice">
+                <img
+                  width="40"
+                  height="40"
+                  src="https://img.icons8.com/ios-filled/50/wordpress--v1.png"
+                  alt="wordpress--v1"
+                />WordPress
+              </div>
+              <div class="item-novice">
+                <i class="lni lni-angular"></i>Angular
+              </div>
+              <div class="item-novice">
+                <i class="lni lni-android-original"></i>Andriod
+              </div>
+              <div class="item-novice">
+                <i class="lni lni-python"></i>Python
+              </div>
+              <div class="item-novice"><i class="lni lni-vuejs"></i>Vue JS</div>
+            </div>
+          </div>
+        </div>
 
         <div class="content">
           <div class="footer">
             <div class="backtoTop">
-              <a href="#VeryTop"><i class="lni lni-arrow-up-circle"></i></a>
+              <a href="#VeryTop">
+                <i class="lni lni-arrow-up-circle"></i>
+                <span>Back To Top</span>
+              </a>
             </div>
             <div class="contact-icons">
-              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/marcel-le-roux-ab5958288/">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
 
-              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/MarcelAndreleRoux"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
             <div class="contact-text"></div>
           </div>
@@ -139,8 +160,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://unpkg.com/swup@4"></script>
-    <script src="https://unpkg.com/@swup/js-plugin@3"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
 
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

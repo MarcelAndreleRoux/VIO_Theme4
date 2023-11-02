@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Scroller</title>
+
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles-theme3.css" />
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <div class="wrapper">
+      <div data-barba="container" data-barba-namespace="Theme3">
+        <nav class="custom-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html#two">About Me</a>
+                <a class="skillbtn" href="skills.html">Skill Set</a>
+                <a href="index.html#three">Project 1</a>
+                <a href="index.html#four">Project 2</a>
+                <a href="index.html#five">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <video class="full-page-video" controls onended="unlockNextVideo()">
+          <source src="public/img/video/VIO_Page1 (1).mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video class="full-page-video" controls onended="unlockNextVideo()">
+          <source src="public/img/video/VIO_Page2 (2).mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video class="full-page-video" controls onended="unlockNextVideo()">
+          <source src="public/img/video/VIO_Page3.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video class="full-page-video" controls onended="unlockNextVideo()">
+          <source src="public/img/video/VIO_Page4.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <video class="full-page-video" controls onended="unlockNextVideo()">
+          <source src="public/img/video/VIO_Page5.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/scripts-theme3.js"></script>
+  </body>
+</html>
