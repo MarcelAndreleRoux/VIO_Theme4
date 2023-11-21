@@ -657,7 +657,7 @@ section {
 }
 
 .character-data {
-  height: 140vh;
+  height: 130vh;
   bottom: 72px;
   background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
@@ -861,7 +861,7 @@ section {
 .map-data {
   background-image: url("../public/img/img-Theme2/incave.png");
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 120vh;
   position: relative;
   z-index: 2;
   bottom: 145px;
@@ -887,7 +887,7 @@ section {
   background-repeat: no-repeat;
   width: 100%;
   z-index: 2;
-  height: 150vh;
+  height: 140vh;
   bottom: 470px;
   display: flex;
   justify-content: space-between;
