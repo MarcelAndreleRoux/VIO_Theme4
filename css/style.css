@@ -661,6 +661,7 @@ section {
   background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   z-index: 2;
+  bottom: 20px;
   position: relative;
   display: flex;
   align-items: center;
