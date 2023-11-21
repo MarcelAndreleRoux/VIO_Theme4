@@ -657,8 +657,7 @@ section {
 }
 
 .character-data {
-  height: 140vh;
-  bottom: 80px;
+  height: 100vh;
   background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   z-index: 2;
@@ -861,10 +860,9 @@ section {
 .map-data {
   background-image: url("../public/img/img-Theme2/incave.png");
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 100vh;
   position: relative;
   z-index: 2;
-  bottom: 700px;
 }
 
 .weapon-data {
@@ -873,8 +871,7 @@ section {
   background-repeat: no-repeat;
   z-index: 2;
   width: 100%;
-  height: 150vh;
-  bottom: 200px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -887,8 +884,7 @@ section {
   background-repeat: no-repeat;
   width: 100%;
   z-index: 2;
-  height: 150vh;
-  bottom: 1400px;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
 }
