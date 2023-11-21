@@ -864,7 +864,7 @@ section {
   height: 150vh;
   position: relative;
   z-index: 2;
-  bottom: 240px;
+  bottom: 400px;
 }
 
 .weapon-data {
@@ -888,7 +888,7 @@ section {
   width: 100%;
   z-index: 2;
   height: 150vh;
-  bottom: 600px;
+  bottom: 1000px;
   display: flex;
   justify-content: space-between;
 }
