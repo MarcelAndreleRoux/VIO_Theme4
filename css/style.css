@@ -632,7 +632,7 @@ section {
 .city-box {
   height: 85vh;
   width: 100%;
-  background-image: url("img/cave-test.png");
+  background-image: url("../public/img/img-Theme2/cave-test.png");
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -658,8 +658,8 @@ section {
 
 .character-data {
   height: 140vh;
-  bottom: 88px;
-  background-image: url("img/backgroundtop.png");
+  bottom: 72px;
+  background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   z-index: 2;
   position: relative;
@@ -676,7 +676,7 @@ section {
   margin-right: 20px;
   width: 650px;
   height: auto;
-  bottom: 270px;
+  bottom: 280px;
 }
 
 .one-shot img {
@@ -710,25 +710,26 @@ section {
 
 .gun img {
   position: absolute;
-  bottom: 100px;
+  top: -150px;
   animation: hover 2s infinite ease-in-out;
 }
 
 .panel {
   position: relative;
+  top: 300px;
 }
 
 .no-click {
   position: relative;
-  bottom: 200px;
+  top: 50px;
   animation: hover 2s infinite ease-in-out;
 }
 
 .gunData {
   display: none;
   position: absolute;
-  top: 200px;
-  left: 50px;
+  top: 400px;
+  left: 30px;
   transform: translateX(10px);
   background-color: #fff;
   border: 20px solid black;
@@ -858,22 +859,22 @@ section {
 }
 
 .map-data {
-  background-image: url("img/incave.png");
+  background-image: url("../public/img/img-Theme2/incave.png");
   background-repeat: no-repeat;
   height: 150vh;
   position: relative;
   z-index: 2;
-  bottom: 544px;
+  bottom: 145px;
 }
 
 .weapon-data {
   position: relative;
-  background-image: url("img/background.png");
+  background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   z-index: 2;
   width: 100%;
   height: 150vh;
-  bottom: 170px;
+  bottom: 143px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -882,12 +883,12 @@ section {
 
 .sidecharacters {
   position: relative;
-  background-image: url("img/background.png");
+  background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   width: 100%;
   z-index: 2;
   height: 150vh;
-  bottom: 918px;
+  bottom: 470px;
   display: flex;
   justify-content: space-between;
 }
@@ -905,20 +906,23 @@ section {
 }
 
 .side-character-1 img {
-  bottom: 180px;
   left: 100px;
 }
 
 .side-character-1 .name {
+  position: relative;
+  top: 250px;
   left: 120px;
 }
 
 .side-character-2 img {
-  bottom: 210px;
+  bottom: 30px;
   right: 180px;
 }
 
 .side-character-2 .name {
+  position: relative;
+  top: 250px;
   right: 180px;
 }
 
@@ -1005,10 +1009,10 @@ section {
   z-index: 2;
   width: 100%;
   height: 150vh;
-  bottom: 1295px;
+  bottom: 470px;
   overflow: auto;
   white-space: nowrap;
-  background-image: url("img/last.png");
+  background-image: url("../public/img/img-Theme2/last.png");
   font-size: 40px;
 }
 
