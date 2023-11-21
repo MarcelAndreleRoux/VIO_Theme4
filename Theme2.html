@@ -22,7 +22,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style-theme2.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-barba="wrapper">
     <ul class="transition">
@@ -35,34 +35,19 @@
 
     <div class="wrapper">
       <div data-barba="container" data-barba-namespace="Theme2">
-        <nav class="custom-navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">
-                <i class="fa-solid fa-bars"></i>
-              </button>
-
-              <div id="myDropdown" class="dropdown-content">
-                <a href="index.html#two">About Me</a>
-                <a class="skillbtn" href="skills.html">Skill Set</a>
-                <a href="index.html#three">Project 1</a>
-                <a href="index.html#four">Project 2</a>
-                <a href="index.html#five">Contact Me</a>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <div class="back-btn-cover">
+          <a href="index.html"><button class="back-btn">Back</button></a>
+        </div>
         <!--Title (photo of one shot and background of cyborg city)-->
         <!--This should just be a standard header paralax where the logo scrolls down slowly under the underground section, I will send code for this if you do not understand-->
-        <header class="city-box">
+        <div class="city-box">
           <div class="logo">
             <img src="public/img/img-Theme2/output-onlinepngtools_2.png" />
           </div>
-        </header>
+        </div>
         <!--Header Paralax (Going under the city into the subway system, I drew this just box it off)-->
         <!--Character stats (My charcater stats nothing big just there)-->
-        <section class="underground-box">
+        <div class="underground-box">
           <!--scrolling into the sewers (each part has it's own space)-->
           <!--as the user scrolls down the background should slowly start to move up to give more of a paralax feel-->
           <!--charcater data-->
@@ -360,7 +345,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
     <!--My details (some stupid stuff)-->
@@ -374,6 +359,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script src="js/script.js"></script>
-    <script src="js/script-theme2.js"></script>
   </body>
 </html>

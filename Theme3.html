@@ -21,7 +21,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/styles-theme3.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body data-barba="wrapper">
     <ul class="transition">
@@ -34,45 +34,32 @@
 
     <div class="wrapper">
       <div data-barba="container" data-barba-namespace="Theme3">
-        <nav class="custom-navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">
-                <i class="fa-solid fa-bars"></i>
-              </button>
+        <div class="back-btn-cover">
+          <a href="index.html"><button class="back-btn">Back</button></a>
+        </div>
 
-              <div id="myDropdown" class="dropdown-content">
-                <a href="index.html#two">About Me</a>
-                <a class="skillbtn" href="skills.html">Skill Set</a>
-                <a href="index.html#three">Project 1</a>
-                <a href="index.html#four">Project 2</a>
-                <a href="index.html#five">Contact Me</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <video class="full-page-video" controls onended="unlockNextVideo()">
-          <source src="public/img/video/VIO_Page1 (1).mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video class="full-page-video" controls onended="unlockNextVideo()">
-          <source src="public/img/video/VIO_Page2 (2).mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video class="full-page-video" controls onended="unlockNextVideo()">
-          <source src="public/img/video/VIO_Page3.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video class="full-page-video" controls onended="unlockNextVideo()">
-          <source src="public/img/video/VIO_Page4.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <video class="full-page-video" controls onended="unlockNextVideo()">
-          <source src="public/img/video/VIO_Page5.mov" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="videos-holder">
+          <div
+            class="video-section"
+            data-video-src="public/img/video/VIO-Page1.MP4"
+          ></div>
+          <div
+            class="video-section"
+            data-video-src="public/img/video/VIO-Page2.mp4"
+          ></div>
+          <div
+            class="video-section"
+            data-video-src="public/img/video/VIO-Page3.mp4"
+          ></div>
+          <div
+            class="video-section"
+            data-video-src="public/img/video/VIO-Page4.mp4"
+          ></div>
+          <div
+            class="video-section"
+            data-video-src="public/img/video/VIO-Page5.mp4"
+          ></div>
+        </div>
       </div>
     </div>
 
@@ -85,6 +72,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script src="js/script.js"></script>
-    <script src="js/scripts-theme3.js"></script>
   </body>
 </html>
