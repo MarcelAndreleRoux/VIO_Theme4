@@ -442,30 +442,6 @@ function Theme2() {
         this.nextElementSibling.style.display = "none";
       });
     });
-
-    const sliderContainer = document.querySelector(".slider-container");
-    const slides = document.querySelectorAll(".slide");
-    const btnPrev = document.querySelector(".btn-prev");
-    const btnNext = document.querySelector(".btn-next");
-
-    let slideIndex = 0;
-
-    // Show initial slide
-    slides[slideIndex].classList.add("active");
-
-    // Go to previous slide
-    btnPrev.addEventListener("click", function () {
-      slides[slideIndex].classList.remove("active");
-      slideIndex = (slideIndex - 1 + slides.length) % slides.length;
-      slides[slideIndex].classList.add("active");
-    });
-
-    // Go to next slide
-    btnNext.addEventListener("click", function () {
-      slides[slideIndex].classList.remove("active");
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add("active");
-    });
   });
 }
 // theme 3 code
