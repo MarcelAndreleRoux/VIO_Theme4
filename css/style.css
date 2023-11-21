@@ -658,7 +658,6 @@ section {
 
 .character-data {
   height: 140vh;
-  bottom: 50px;
   background-image: url("../public/img/img-Theme2/backgroundtop.png");
   background-repeat: no-repeat;
   z-index: 2;
@@ -864,7 +863,6 @@ section {
   height: 150vh;
   position: relative;
   z-index: 2;
-  bottom: 85px;
 }
 
 .weapon-data {
@@ -874,7 +872,6 @@ section {
   z-index: 2;
   width: 100%;
   height: 150vh;
-  bottom: 93px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -888,7 +885,6 @@ section {
   width: 100%;
   z-index: 2;
   height: 140vh;
-  bottom: 300px;
   display: flex;
   justify-content: space-between;
 }
